@@ -1,3 +1,6 @@
+# k8s-nginx
+
+This is my playground for kubernetes.
 
 ## Deployment and pods
 
@@ -60,5 +63,3 @@ Open kubernetes dashboard.
 ```sh
 minikube service --namespace kube-system  kubernetes-dashboard
 ```
-
-
