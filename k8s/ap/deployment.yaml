@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: ap-deployment
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: ap
+    spec:
+      containers:
+        - name: ap
+          image: ap:v1
+          ports:
+          - containerPort: 8080
