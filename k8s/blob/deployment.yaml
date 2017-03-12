@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: blob-deployment
+spec:
+  template:
+    metadata:
+      labels:
+        app: blob
+    spec:
+      containers:
+        - name: blob
+          image: blob:v1
+          ports:
+          - containerPort: 9080

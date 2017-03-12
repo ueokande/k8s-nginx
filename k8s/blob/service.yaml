@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: blob-service
+spec:
+  type: NodePort
+  ports:
+    - name: blob-http
+      protocol: TCP
+      port: 9080
+  selector:
+    app: blob
